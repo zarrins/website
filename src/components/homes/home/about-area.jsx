@@ -28,7 +28,7 @@ const about_info = {
     about_title: "About Our Courses",
     sub_title:"Explore Thousands of Creative Classes.",
     des: <>Dramatically supply transparent deliverables beforese backward comp internal or "organic" sources. Comp  transparent leverage other.</>,
-    about_btn: "Read More"
+    about_btn: "بیشتر بدانید"
 }
 
 const {img_1, img_2, img_3, about_title, sub_title, des, about_btn} = about_info

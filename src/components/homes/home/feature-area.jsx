@@ -3,28 +3,46 @@ import React from "react";
 const feature_content = [
   {
     id: 1,
-    icon: "fi fi-rr-paper-plane",
-    title: "Online Courses",
-    des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
+    icon: "/assets/img/washing-machine.png",
+    title: "تعمیر لباسشویی",
+    // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
   },
   {
     id: 2,
-    icon: "fi fi-rr-user",
-    title: "Expert Trainer",
-    des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
+    icon: "/assets/img/washing-machine.png",
+    title: "تعمیر یخچال",
+    // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
   },
 
   {
     id: 3,
-    icon: "fi fi-rr-document",
-    title: "Get Certificate",
-    des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
+    icon: "/assets/img/washing-machine.png",
+    title: "تعمیر ظرفشویی",
+    // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
   },
   {
     id: 4,
-    icon: "fi fi-rr-calendar",
-    title: "Life Time Access",
-    des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
+    icon: "/assets/img/washing-machine.png",
+    title: "تعمیر جاروبرقی",
+    // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
+  },
+  {
+    id: 5,
+    icon: "/assets/img/washing-machine.png",
+    title: "تعمیر ماکروفر",
+    // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
+  },
+  {
+    id: 6,
+    icon: "/assets/img/washing-machine.png",
+    title: "تعمیر کولرگازی",
+    // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
+  },
+  {
+    id: 7,
+    icon: "/assets/img/washing-machine.png",
+    title: "تعمیر پکیج",
+    // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
   },
 ];
 
@@ -47,23 +65,28 @@ const FeatureArea = () => {
             </div>
           </div>
           <div className="tp-feature-cn">
-            <div className="row">
+            <div className="row justify-space-around ">
+              {/* <div style={{backgroundImage: 'url(/assets/img/Vector.png)', width: "155px", height: '160px'}} >
+                <img src="/assets/img/washing-machine.png" className=""></img>
+              </div> */}
               {feature_content.map((item) => (
-                <div key={item.id} className="col-xl-3 col-lg-6 col-md-6">
+                <div key={item.id} className="col-xl-2 col-lg-7 col-md-6">
                   <div
-                    className="tpfea mb-30 wow fadeInUp"
+                    className="tpfea mb-30 wow fadeInUp relative w-25%"
                     data-wow-duration=".8s"
                     data-wow-delay=".6s"
                   >
-                    <div className="tpfea__icon mb-25">
-                      <i className={item.icon}></i>
+                    <div>
+                      <div className="tpfea__icon mb-25">
+                      <img src={item.icon} className="w-25 h-25"></img>
+                      {/* <i className={item.icon}></i> */}
                     </div>
                     <div className="tpfea__text">
                       <h5 className="tpfea__title mb-20">{item.title}</h5>
-                      <p>
-                        {item.des}
-                      </p>
+                      
                     </div>
+                    </div>
+                    
                   </div>
                 </div>
               ))}

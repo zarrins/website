@@ -69,7 +69,7 @@ const AboutArea = () => {
             <div className="col-xl-5 col-lg-6 col-md-12 col-12">
               <div className="tp-abcircle-content ml-65 mb-60">
                 <div className="section-title mb-35">
-                  <span className="tp-sub-title-box mb-15">About us</span>
+                  <span className="tp-sub-title-box mb-15"> درباره ما</span>
                   <h2 className="tp-section-title mb-20">
                     {title}
                   </h2>

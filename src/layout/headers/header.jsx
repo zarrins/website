@@ -7,12 +7,13 @@ import Sidebar from "./sidebar";
 
 // category_data
 const category_data = [
-  {title: "Bangla Medium"},
-  {title: "English Medium"},
-  {title: "Video Edition"},
-  {title: "Logo Design"},
-  {title: "Francy Medium"},
-
+  {title: "تعمیر لباسشویی", link: ""},
+  {title: "تعمیر یخچال ", link: ""},
+  {title: "تعمیر ظرفشویی", link:""},
+  {title: "تعمیر جاروبرقی", link:""},
+  {title: "تعمیر ماکروفر", link:""},
+  {title: "تعمیر کولر گازی", link:""},
+  {title: "تعمیر پکیج", link:""},
 ]
 const Header = () => {
 const {sticky} = useSticky()
@@ -37,7 +38,7 @@ const {sticky} = useSticky()
                         <ul>
                           <li>
                             <a href="#">
-                              دسته بندی {" "}
+                            خدمات ما {" "}
                               <span>
                                 <i className="arrow_carrot-down"></i>
                               </span>

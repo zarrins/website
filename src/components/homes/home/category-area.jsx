@@ -5,51 +5,58 @@ import React from "react";
 const category_data = [
   {
     id: 1,
-    img: "/assets/img/category/category-01.png",
-    title: "Design Deve",
+    icon: "/assets/img/washing-machine.png",
+    title: "تعمیر لباسشویی",
     link: "/course-grid",
+
   },
   {
     id: 2,
-    img: "/assets/img/category/category-02.png",
-    title: "Development",
+    icon: "/assets/img/washing-machine.png",
+    title: "تعمیر یخچال",
+    // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
     link: "/course-grid",
   },
+
   {
     id: 3,
-    img: "/assets/img/category/category-03.png",
-    title: "Marketing",
+    icon: "/assets/img/washing-machine.png",
+    title: "تعمیر ظرفشویی",
+    // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
     link: "/course-grid",
+
   },
   {
     id: 4,
-    img: "/assets/img/category/category-04.png",
-    title: "It & Software",
+    icon: "/assets/img/washing-machine.png",
+    title: "تعمیر جاروبرقی",
+    // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
     link: "/course-grid",
+
   },
   {
     id: 5,
-    img: "/assets/img/category/category-05.png",
-    title: "Videography",
+    icon: "/assets/img/washing-machine.png",
+    title: "تعمیر ماکروفر",
+    // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
     link: "/course-grid",
+
   },
   {
     id: 6,
-    img: "/assets/img/category/category-06.png",
-    title: "Business Sys",
+    icon: "/assets/img/washing-machine.png",
+    title: "تعمیر کولرگازی",
+    // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
     link: "/course-grid",
+
   },
   {
     id: 7,
-    img: "/assets/img/category/category-07.png",
-    title: "Photography",
+    icon: "/assets/img/washing-machine.png",
+    title: "تعمیر پکیج",
+    // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
     link: "/course-grid",
-  },
-  {
-    id: 8,
-    img: "/assets/img/category/category-08.png",
-    title: "Musical Intru",
-    link: "/course-grid",
+
   },
 ];
 
@@ -73,10 +80,10 @@ const CategoryArea = () => {
           </div>
           <div className="row">
             {category_data.map((item) => (
-              <div key={item.id} className="col-xl-3 col-lg-4 col-md-6">
-                <div className="tp-cat-item mb-40 d-flex align-items-center">
-                  <div className="tp-category-icon mr-15">
-                    <img src={item.img} alt="category-img" />
+              <div key={item.id} className="col-xl-2 col-lg-3 col-md-4">
+                <div className="tp-cat-item mb-40 d-flex align-items-center flex-column">
+                  <div className="tp-category-icon mr-15 mb-10">
+                    <img src={item.icon} alt="category-img" />
                   </div>
                   <h4 className="tp-category-title">
                     <Link href={item.link}>{item.title}</Link>
