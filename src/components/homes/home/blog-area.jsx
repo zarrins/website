@@ -15,7 +15,7 @@ const BlogArea = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="section-title mb-65 text-center">
-                <h2 className="tp-section-title mb-20">Latest Blogs & News</h2>
+                <h2 className="tp-section-title mb-20">مجله تماس با سرویس</h2>
               </div>
             </div>
           </div>

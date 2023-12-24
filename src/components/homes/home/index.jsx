@@ -20,13 +20,13 @@ const Home = () => {
       {/* <FeatureArea /> */}
       <AboutArea />
       {/* <CourseArea /> */}
-      <ChooseArea />
+      {/* <ChooseArea /> */}
       <CounterArea />
-      <InstructorArea />
+      {/* <InstructorArea /> */}
       <SuitableArea />
-      <TestimonialArea />
+      {/* <TestimonialArea /> */}
       <BlogArea />
-      <BrandArea style_1={true} />
+      {/* <BrandArea style_1={true} /> */}
     </>
   );
 };

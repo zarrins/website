@@ -3,41 +3,37 @@ import React from "react";
 const footer_data = [
   {
     id: 1,
-    title: "About",
+    title: "لینک ها",
     cls: "col-xl-2",
     footer_col: "footer-col-1",
     links: [
-      { name: "About Us", link: "/about" },
-      { name: "Blog", link: "/blog" },
-      { name: "Careers", link: "/careers" },
-      { name: "Jobs", link: "/" },
-      { name: "In Press", link: "/" },
+      { name: "درباره ما", link: "/about" },
+      { name: "وبلاگ", link: "/blog" },
+      { name: "پرسش های متداول", link: "/" },
+      { name: "خدمات", link: "/" },
     ],
   },
   {
     id: 2,
-    title: "Quick Links",
+    title: "لینک های سریع",
     cls: "col-xl-3",
     footer_col: "footer-col-2",
     links: [
-      { name: "Refund Policy", link: "/policy" },
-      { name: "Documentation", link: "/documentation" },
-      { name: "Chat online", link: "/chat-online" },
-      { name: "Order Cancel", link: "/order-cancel" },
-      { name: "Privacy Policy", link: "/privacy-policy" },
+      { name: "تعمیر یخچال", link: "/policy" },
+      { name: "تعمیر پکیج", link: "/documentation" },
+      { name: "تعمیر لباسشویی", link: "/chat-online" },
+      { name: "تعمیر کولر گازی", link: "/order-cancel" },
     ],
   },
   {
     id: 3,
-    title: "Support",
+    title: "پشتیبانی",
     footer_col: "footer-col-3",
     cls: "col-xl-3",
     links: [
-      { name: "Contact us", link: "/contact" },
-      { name: "Online Chat", link: "/online-chat" },
-      { name: "Whatsapp", link: "/whatsapp" },
-      { name: "Telegram", link: "/telegram" },
-      { name: "Ticketing", link: "/ticketing" },
+      { name: "تماس با ما", link: "/contact" },
+      { name: "واتساپ", link: "/whatsapp" },
+      { name: "تلگرام", link: "/telegram" },
     ],
   },
 ];
@@ -45,12 +41,12 @@ const footer_data = [
 
 // social_links
 const social_links = [
-  {
-    link: "http://facebook.com",
-    target: "_blank",
-    icon: "fab fa-facebook-f",
-    name: "Facebook",
-  },
+  // {
+  //   link: "http://facebook.com",
+  //   target: "_blank",
+  //   icon: "fab fa-facebook-f",
+  //   name: "Facebook",
+  // },
   {
     link: "https://www.youtube.com/",
     target: "_blank",

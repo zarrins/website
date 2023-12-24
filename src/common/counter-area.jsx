@@ -5,31 +5,35 @@ import Count from "./count";
 const counter_data = [
   {
     id: 1,
-    icon: "fi fi-rr-user",
+    icon: "fa-regular fa-address-book",
     count_number: 276,
     thousand: "K",
-    title: "Worldwide Students",
+    title: "ثبت درخواست توسط شما",
+    desc:""
   },
   {
     id: 2,
-    icon: "fi fi-rr-document",
+    icon: "fa-solid fa-headset",
     count_number: 23,
     thousand: "",
-    title: "Years Experience",
+    title: "هماهنگی کارشناسان با شما",
+    desc:""
   },
   {
     id: 3,
-    icon: "fi fi-rr-apps",
+    icon: "fa-solid fa-comments-dollar",    
     count_number: 735,
     thousand: "",
-    title: "Professional Courses",
+    title: "مراجعه کارشناس واعلام هزینه",
+    desc:""
   },
   {
     id: 4,
-    icon: "fi fi-rr-star",
+    icon: "fa-solid fa-screwdriver-wrench",
     count_number: 407,
     thousand: "K",
-    title: "Beautiful Review",
+    title: "تست دستگاه و پایان سفارش",
+    desc:""
   },
 ];
 const CounterArea = ({style_counter}) => {
@@ -47,17 +51,17 @@ const CounterArea = ({style_counter}) => {
             {counter_data.map((item) => (
               <div key={item.id} className="col-xl-3 col-md-6">
                 <div className="counter-item mb-60 text-center">
-                  <div className="counter-item__icon mb-25">
+                  <div className="counter-item__icon ">
                     <i className={item.icon}></i>
                   </div>
                   <div className="counter-item__content">
                     <h4 className="counter-item__title">
                       <span className="counter">
-                        <Count
+                        {/* <Count
                           add_style={true}
                           number={item.count_number}
                           text={item.thousand}
-                        />
+                        /> */}
                       </span>
                     </h4>
                     <p>{item.title}</p>

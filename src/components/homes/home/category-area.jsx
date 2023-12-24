@@ -74,7 +74,7 @@ const CategoryArea = () => {
           <div className="row text-center">
             <div className="col-lg-12">
               <div className="section-title mb-65">
-                <h2 className="tp-section-title">Top Categories</h2>
+                <h2 className="tp-section-title">خدمات تماس با سرویس</h2>
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@ const CategoryArea = () => {
             {category_data.map((item) => (
               <div key={item.id} className="col-xl-2 col-lg-3 col-md-4">
                 <div className="tp-cat-item mb-40 d-flex align-items-center flex-column">
-                  <div className="tp-category-icon mr-15 mb-10">
+                  <div className="tp-category-icon mr-10 mb-10">
                     <img src={item.icon} alt="category-img" />
                   </div>
                   <h4 className="tp-category-title">
