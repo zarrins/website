@@ -9,7 +9,7 @@ const HeroBanner = () => {
             <div className="container">
                <div className="row">
                <div className="banner-shape d-none d-lg-block">
-                     {/* <img src="/assets/img/banner/banner-shape-01.png" alt="banner-shape" className="b-shape" /> */}
+                     <img src="/assets/img/banner/banner-shape-01.png" alt="banner-shape" className="b-shape" />
                   </div>
                   <div className="col-xl-6 col-lg-6">
                      <div className="banner-info d-none">
@@ -27,7 +27,7 @@ const HeroBanner = () => {
                         <h2 className="hero-title mb-35">نصب و تعمیر انواع برند لوازم خانگی توسط تیم  <i>تماس با سرویس</i></h2>
                         <p>تیم ما متناسب با مشکل، مدل و برند دستگاه؛ بهترین متخصص را به شما اختصاص میدهد. </p>
                         <div className="tp-banner-btn">
-                           <Link href="/course-list" className="tp-btn">ثبت سفارش آنلاین</Link>
+                           <Link href="/course-list" className="tp-btn">ثبت درخواست تعمیرات</Link>
                         </div>
                      </div>
                   </div>

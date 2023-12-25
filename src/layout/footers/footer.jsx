@@ -3,19 +3,19 @@ import React from "react";
 const footer_data = [
   {
     id: 1,
-    title: "لینک ها",
-    cls: "col-xl-2",
+    title: "تماس با سرویس",
+    cls: "col-xl-3",
     footer_col: "footer-col-1",
     links: [
       { name: "درباره ما", link: "/about" },
       { name: "وبلاگ", link: "/blog" },
-      { name: "پرسش های متداول", link: "/" },
-      { name: "خدمات", link: "/" },
+      { name: "پرسش های متداول", link: "/faq" },
+      { name: "خدمات", link: "/services" },
     ],
   },
   {
     id: 2,
-    title: "لینک های سریع",
+    title: "لینک ها",
     cls: "col-xl-3",
     footer_col: "footer-col-2",
     links: [
@@ -54,7 +54,7 @@ const social_links = [
     name: "Youtube",
   },
   {
-    link: "https://www.basketball.com/",
+    link: "https://www.instagram.com/",
     target: "_blank",
     icon: "fa-light fa-basketball",
     name: "Instagram",
@@ -64,7 +64,7 @@ const social_links = [
     link: "http://whatsapp.com",
     target: "_blank",
     icon: "fa-brands fa-whatsapp",
-    name: "Twitter",
+    name: "whatsapp",
   },
 ];
 
@@ -91,13 +91,13 @@ const Footer = () => {
                   <div key={item.id} className={`${item.cls} col-md-4`}>
                     <div className={`footer-widget ${item.footer_col} mb-50`}>
                       <div className="footer-widget__text mb-35">
-                        <h3 className="footer-widget__title">{item.title}</h3>
+                        <h5 className="footer-widget__title">{item.title}</h5>
                       </div>
                       <div className="footer-widget__link">
                         <ul>
                           {item.links.map((link, i) => (
                             <li key={i}>
-                              <a href="#">{link.name}</a>
+                              <a href={item.links}>{link.name}</a>
                             </li>
                           ))}
                         </ul>
@@ -105,7 +105,7 @@ const Footer = () => {
                     </div>
                   </div>
                 ))}
-                <div className="col-xl-4 col-lg-6 col-md-8">
+                <div className="col-xl-3 col-lg-6 col-md-8">
                   <div className="footer-widget footer-col-4  mb-50">
                     <div className="footer-widget__text mb-35">
                       <h3 className="footer-widget__title">Support</h3>
@@ -119,9 +119,9 @@ const Footer = () => {
                         <span>
                           <i className="icon_mail_alt"></i>
                         </span>
-                        <input type="email" placeholder="Enter your email" />
-                        <button className="footer-widget__submit tp-border-btn2">
-                          Subscribe Now
+                        <input type="email" placeholder="ایمیل خود را وارد کنید" className="order-2"/>
+                        <button className="footer-widget__submit tp-border-btn2 order-3">
+                          عضویت
                         </button>
                       </form>
                     </div>

@@ -58,7 +58,7 @@ const ChooseArea = () => {
             <div className="col-xl-5 col-lg-6 col-md-12">
               <div className="tp-choose-content mb-50">
                 <div className="section-title mb-30">
-                  <span className="tp-bline-stitle mb-15">Why Choose Us</span>
+                  <span className="tp-bline-stitle mb-15">چرا ما؟؟؟</span>
                   <h2 className="tp-section-title mb-35">
                     {title}
                   </h2>

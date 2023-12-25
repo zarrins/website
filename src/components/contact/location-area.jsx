@@ -10,7 +10,7 @@ const location_info = [
     {
         id: 2,
         icon: "fa-light fa-location-dot",
-        info: "1901 Thornridge Cir. Shiloh, Hawaii 81063"
+        info: "آذربایجانشرقی- تبریز"
     }, 
     {
         id: 3,
@@ -42,7 +42,7 @@ const LocationArea = () => {
                         <i className="fa-light fa-location-dot"></i>
                      </div>
                      <div className="location-content">
-                        <h5 className="location-title">1901 Thornridge Cir. Shiloh, Hawaii 81063</h5>
+                        <h5 className="location-title">آذربایجانشرقی- تبریز</h5>
                      </div>
                   </div>
                </div>

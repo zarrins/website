@@ -7,13 +7,14 @@ import Sidebar from './sidebar';
 
 // category_data
 const category_data = [
-    {title: "Bangla Medium"},
-    {title: "English Medium"},
-    {title: "Video Edition"},
-    {title: "Logo Design"},
-    {title: "Francy Medium"},
-  
-  ]
+   {title: "تعمیر لباسشویی", link: ""},
+  {title: "تعمیر یخچال ", link: ""},
+  {title: "تعمیر ظرفشویی", link:""},
+  {title: "تعمیر جاروبرقی", link:""},
+  {title: "تعمیر ماکروفر", link:""},
+  {title: "تعمیر کولر گازی", link:""},
+  {title: "تعمیر پکیج", link:""},
+]
 
 const HeaderTwo = () => {
 
@@ -37,7 +38,7 @@ const {sticky} = useSticky()
                         <div className="header-cat-menu mr-40">
                            <nav>
                               <ul>
-                                 <li><a href="#"> دسته بندی <span><i className="arrow_carrot-down"></i></span></a>
+                                 <li><a href="#"> خدمات ما <span><i className="arrow_carrot-down"></i></span></a>
                                     
                                  <ul className="sub-menu">
                                     {category_data.map((item, i) => 
@@ -58,7 +59,7 @@ const {sticky} = useSticky()
                         <div className="header-search-box">
                            <form onClick={(e) => e.preventDefault()}>
                               <div className="search-input">
-                                 <input type="Email" placeholder="What you want to learn?" />
+                                 <input type="Email" placeholder="برای جستجو تایپ کنید ..." />
                                  <button className="header-search-btn"><i className="fi fi-rs-search mr-5"></i> جستجو کن</button>
                               </div>
                            </form>

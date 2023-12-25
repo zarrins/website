@@ -15,7 +15,7 @@ const Tags = () => {
   return (
     <>
       <div className="sidebar__widget mb-40">
-        <h3 className="sidebar__widget-title mb-30">Tags</h3>
+        <h3 className="sidebar__widget-title mb-30">تگ ها</h3>
         <div className="sidebar__widget-content">
           <div className="tagcloud">
             {tags.map((item, i) => (

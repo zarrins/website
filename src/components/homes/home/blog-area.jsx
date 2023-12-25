@@ -53,7 +53,7 @@ const BlogArea = () => {
             <div className="col-lg-12">
               <div className="blog-btn text-center">
                 <Link href="/blog" className="tp-btn">
-                  All Blog
+                  تمام مطالب
                 </Link>
               </div>
             </div>

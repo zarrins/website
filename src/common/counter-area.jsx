@@ -1,5 +1,7 @@
 import React from "react";
 import Count from "./count";
+import Link from "next/link";
+
 
 // counter data 
 const counter_data = [
@@ -9,7 +11,7 @@ const counter_data = [
     count_number: 276,
     thousand: "K",
     title: "ثبت درخواست توسط شما",
-    desc:""
+    desc:"درخواست خود را به صورت آنلاین در سایت ثبت کرده و یا با ما تماس بگیرید."
   },
   {
     id: 2,
@@ -17,7 +19,7 @@ const counter_data = [
     count_number: 23,
     thousand: "",
     title: "هماهنگی کارشناسان با شما",
-    desc:""
+    desc:"کارشناسان ما در کوتاهترین زمان به منظور هماهنگی با شما تماس خواهند گرفت."
   },
   {
     id: 3,
@@ -25,7 +27,7 @@ const counter_data = [
     count_number: 735,
     thousand: "",
     title: "مراجعه کارشناس واعلام هزینه",
-    desc:""
+    desc:"دستگاه شما توسط کارشناس بازدید و ایراد و هزینه خدمات به شما اعلام می گردد."
   },
   {
     id: 4,
@@ -33,7 +35,7 @@ const counter_data = [
     count_number: 407,
     thousand: "K",
     title: "تست دستگاه و پایان سفارش",
-    desc:""
+    desc:"دستگاه به صورت کامل تست شده و سالم تحویل شما خواهد گردید."
   },
 ];
 const CounterArea = ({style_counter}) => {
@@ -65,11 +67,44 @@ const CounterArea = ({style_counter}) => {
                       </span>
                     </h4>
                     <p>{item.title}</p>
+                    <p className="fs-6 mt-3">{item.desc}</p>
                   </div>
                 </div>
               </div>
             ))}
+            <div className="d-flex justify-content-center">
+                  <Link href="/about" className="tp-btn">ثبت درخواست تعمیرات</Link>
+                </div>
           </div>
+
+          {/* <div class="row">
+            <div class="col-md-12">
+              <ul class="stepper stepper-horizontal">
+                <li class="completed">
+                  <a href="#!">
+                    <span class="circle">1</span>
+                    <span class="label">First step</span>
+                  </a>
+                </li>
+
+                <li class="active">
+                  <a href="#!">
+                    <span class="circle">2</span>
+                    <span class="label">Second step</span>
+                  </a>
+                </li>
+
+                <li class="warning">
+                  <a href="#!">
+                    <span class="circle"><i class="fas fa-exclamation"></i></span>
+                    <span class="label">Third step</span>
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </div> */}
         </div>
       </section>
     </>

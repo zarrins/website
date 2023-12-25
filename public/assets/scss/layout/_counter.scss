@@ -6,16 +6,22 @@
 
 .counter-item {
     &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         & i {
             height: 80px;
             width: 80px;
             // line-height: 85px;
             text-align: center;
-            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background: var(--tp-border-2);
             color: var(--tp-common-white);
             border-radius: 10px;
-            font-size: 28px;
+            font-size: 32px;
             transform: translate3d(0, 0, 0);
             transition: transform 0.3s cubic-bezier(0.21, 0.6, 0.44, 2.18);
         }
@@ -24,7 +30,8 @@
     &__content {
         & p {
             margin-bottom: 0;
-            font-size: 24px;
+            font-size: 20px;
+            color: rgb(48, 47, 47);
 
             @media #{$xl,$lg, $md} {
                 font-size: 20px;
@@ -36,9 +43,9 @@
         font-size: 44px;
         margin-bottom: 25px;
         position: relative;
-        padding-bottom: 20px;
+        // padding-bottom: 20px;
 
-        &::before {
+        &::after {
             position: absolute;
             content: "";
             bottom: 60px;
@@ -49,7 +56,9 @@
             right: -327px;
             margin: auto;
             border-radius: 50px;
+
         }
+
 
         @media #{$md} {
             font-size: 36px;
@@ -59,6 +68,7 @@
     &:hover {
         & .counter-item__icon i {
             transform: translate3d(0, -5px, 0);
+
         }
     }
 }

@@ -27,7 +27,7 @@ const RecentPost = () => {
   return (
     <>
       <div className="sidebar__widget mb-55">
-        <h3 className="sidebar__widget-title mb-25">Recent Post</h3>
+        <h3 className="sidebar__widget-title mb-25">مطالب اخیر</h3>
         <div className="sidebar__widget-content">
           <div className="sidebar__post rc__post">
             {recent_post.map((item) => (

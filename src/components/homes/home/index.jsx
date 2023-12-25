@@ -20,10 +20,10 @@ const Home = () => {
       {/* <FeatureArea /> */}
       <AboutArea />
       {/* <CourseArea /> */}
-      {/* <ChooseArea /> */}
       <CounterArea />
+      <ChooseArea />
       {/* <InstructorArea /> */}
-      <SuitableArea />
+      <SuitableArea style_2={true}/>
       {/* <TestimonialArea /> */}
       <BlogArea />
       {/* <BrandArea style_1={true} /> */}

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import OrderForm from "../components/form/order-form";
 
 // suitable_data
 const suitable_data = [
@@ -13,16 +14,16 @@ const suitable_data = [
     des: <>Dramatically supply transpa deliverables before & you.</>,
     img: "/assets/img/bg/suit-bg-01.png",
   },
-  {
-    id: 2,
-    title: (
-      <>
-        Do you want to <span>Learn</span> here?
-      </>
-    ),
-    des: <>Dramatically supply transpa deliverables before & you.</>,
-    img: "/assets/img/bg/suit-bg-02.png",
-  },
+  // {
+  //   id: 2,
+  //   title: (
+  //     <>
+  //       Do you want to <span>Learn</span> here?
+  //     </>
+  //   ),
+  //   des: <>Dramatically supply transpa deliverables before & you.</>,
+  //   img: "/assets/img/bg/suit-bg-02.png",
+  // },
 ];
 
 const SuitableArea = ({ style_2}) => {
@@ -44,15 +45,15 @@ const SuitableArea = ({ style_2}) => {
           <div className="row text-center">
             <div className="col-lg-12">
               <div className="section-title mb-60">
-                <span className="tp-sub-title mb-25">Join With Us</span>
-                <h2 className="tp-section-title">
-                  Which One is Suitable For You?
-                </h2>
+                <h3 className="tp-section-title">
+                  ثبت درخواست تعمیرات
+                </h3>
+                <span className="tp-sub-title mb-25">جهت ثبت درخواست فرم زیر را تکمیل نمایید.</span>
               </div>
             </div>
           </div>
           <div className="row">
-            {suitable_data.map((item) => (
+            {/* {suitable_data.map((item) => (
               <div key={item.id} className="col-xl-6">
                 <div
                   className={`tp-suit mb-30 p-relative ${
@@ -73,7 +74,9 @@ const SuitableArea = ({ style_2}) => {
                   </div>
                 </div>
               </div>
-            ))}
+            ))} */}
+           <OrderForm />
+
           </div>
         </div>
       </section>

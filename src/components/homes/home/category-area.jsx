@@ -78,9 +78,9 @@ const CategoryArea = () => {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row justify-content-center">
             {category_data.map((item) => (
-              <div key={item.id} className="col-xl-2 col-lg-3 col-md-4">
+              <div key={item.id} className="col-xl-3 col-lg-3 col-md-2">
                 <div className="tp-cat-item mb-40 d-flex align-items-center flex-column">
                   <div className="tp-category-icon mr-10 mb-10">
                     <img src={item.icon} alt="category-img" />

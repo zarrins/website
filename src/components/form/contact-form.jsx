@@ -13,7 +13,7 @@ const ContactForm = () => {
             <div className="col-lg-6 col-md-12 col-12">
               <div className="contact-wrapper mr-65 mb-60">
                 <div className="sub-contact-title">
-                  <h5 className="contact-title mb-30">Send Us Message</h5>
+                  <h5 className="contact-title mb-30">پیشنهادات و نظرات خود را با ما در میان بگذارید.</h5>
                 </div>
                 <div className="contact-form">
                   <form
@@ -24,10 +24,10 @@ const ContactForm = () => {
                     <div className="row">
                       <div className="col-md-6">
                         <div className="contact-form-input mb-25">
-                          <span>Name</span>
+                          <span>نام و نام خانوادگی</span>
                           <input
                             type="name"
-                            placeholder="Your Name"
+                            placeholder="نام و نام خانوادگی را وارد کنید"
                             name="name"
                             required
                           />
@@ -35,10 +35,10 @@ const ContactForm = () => {
                       </div>
                       <div className="col-md-6">
                         <div className="contact-form-input mb-25">
-                          <span>Email Id</span>
+                          <span>آدرس ایمیل</span>
                           <input
                             type="email"
-                            placeholder="Your Email"
+                            placeholder=" ایمیل خود را وارد کنید"
                             name="email"
                             required
                           />
@@ -46,15 +46,15 @@ const ContactForm = () => {
                       </div>
                       <div className="col-md-12">
                         <div className="contact-form-input mb-40">
-                          <span>Comments</span>
+                          <span>دیدگاه شما</span>
                           <textarea
-                            placeholder="Enter Your Message"
+                            placeholder="پیغام خود را درج نمایید..."
                             name="message"
                             required
                           ></textarea>
                         </div>
                         <button className="tp-btn" type="submit">
-                          Submit Now
+                          ثبت دیدگاه
                         </button>
                       </div>
                     </div>
@@ -66,7 +66,7 @@ const ContactForm = () => {
             <div className="col-lg-6 col-md-12 col-12">
               <div className="contact-bg mb-60">
                 <img
-                  src="/assets/img/bg/contact-sub-bg-01.png"
+                  src="/assets/img/bg/contact-sub-bg-01.jpg"
                   alt="contact-bg"
                 />
               </div>

@@ -16,7 +16,7 @@ const Breadcrumb = ({ title, subtitle, isDbbl = "" }) => {
               <h3 className="breadcrumb__title mb-20">{title}</h3>
               <div className="breadcrumb__list">
                 <span>
-                  <Link href="/">Home</Link>
+                  <Link href="/">خانه</Link>
                 </span>
                 <span className="dvdr">
                   <i className="fa-regular fa-angle-right"></i>

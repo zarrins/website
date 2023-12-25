@@ -3,11 +3,11 @@ import React from "react";
 
 // choose data 
 const choose_data = {
-title: "Why Choose Us",
-sub_title: "Why You Choose Our E-Pora Online learning",
+title: "چرا ما؟؟",
+sub_title: "مزایای تعمیرات تماس با سرویس چیست",
 des: <>Dramatically supply transparent deliverables before & you
 backward comp internal or "organic" sources.</>,
-  experiences_years: "23",
+  experiences_years: "10",
 
 
 }
@@ -73,11 +73,11 @@ const ChooseArea = ({style_about, style_2}) => {
                   <ul>
                     <li>
                       <i>{experiences_years}+</i>
-                      <p>Years Experiences</p>
+                      <p>سال تجربه</p>
                     </li>
                     <li>
                       <i className="fa-light fa-check"></i>
-                      <p>Fully Safe & Secure</p>
+                      <p>سرعت بالای خدمات</p>
                     </li>
                     <li>
                       <p>Total Students</p>

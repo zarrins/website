@@ -25,7 +25,7 @@ const about_info = {
     img_1: "/assets/img/about/about-img.png",
     img_2: "/assets/img/about/about-shape-01.png",
     img_3: "/assets/img/about/about-shape-02.png",
-    about_title: "About Our Courses",
+    about_title: "درباره تماس با سرویس",
     sub_title:"Explore Thousands of Creative Classes.",
     des: <>Dramatically supply transparent deliverables beforese backward comp internal or "organic" sources. Comp  transparent leverage other.</>,
     about_btn: "بیشتر بدانید"

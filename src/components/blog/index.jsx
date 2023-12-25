@@ -7,7 +7,7 @@ import Postbox from "./postbox";
 const Blog = () => {
   return (
     <>
-      <Breadcrumb title="Blog" subtitle="blog" />
+      <Breadcrumb title="بلاگ" subtitle="بلاگ" />
       <Postbox />
       <CounterArea />
     </>
