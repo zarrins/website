@@ -16,7 +16,7 @@ const CategoryArea = () => {
             <div className="col-lg-12">
               <div className="section-title mb-70">
                 <span className="tp-bline-stitle mb-15">Top Categories</span>
-                <h2 className="tp-section-title">Explore Company Courses</h2>
+                <h2 className="tp-section-title">Explore Company services</h2>
               </div>
             </div>
           </div>
@@ -31,7 +31,7 @@ const CategoryArea = () => {
                   </div>
                   <div className="tp-cat-content">
                     <h4 className="tp-category-title tp-title-small">
-                      <Link href="/course-grid">{item.title}</Link>
+                      <Link href="/service-grid">{item.title}</Link>
                     </h4>
                     <p>{item.available}</p>
                   </div>

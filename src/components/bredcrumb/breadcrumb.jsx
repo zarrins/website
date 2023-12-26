@@ -19,13 +19,13 @@ const Breadcrumb = ({ title, subtitle, isDbbl = "" }) => {
                   <Link href="/">خانه</Link>
                 </span>
                 <span className="dvdr">
-                  <i className="fa-regular fa-angle-right"></i>
+                  <i className="fa-regular fa-angle-left"></i>
                 </span>
                 {isDbbl && (
                   <>
                     <span className="sub-page-black">{isDbbl}</span>
                     <span className="dvdr">
-                      <i className="fa-regular fa-angle-right"></i>
+                      <i className="fa-regular fa-angle-left"></i>
                     </span>
                   </>
                 )}

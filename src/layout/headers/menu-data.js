@@ -13,7 +13,7 @@ const menu_data = [
   {
     id: 2,
     title: "خدمات",
-    link: "/about",
+    link: "/services",
     has_dropdown: true,
     sub_menus: [
       { link: "/about", title: "About" },
@@ -40,9 +40,9 @@ const menu_data = [
     link: "/contact",
     has_dropdown: true,
     sub_menus: [
-      { link: "/course-grid", title: "Course Grid" },
-      { link: "/course-list", title: "Course List" },
-      { link: "/course-details", title: "Course Details" },
+      { link: "/service-grid", title: "service Grid" },
+      { link: "/service-list", title: "service List" },
+      { link: "/service-details", title: "service Details" },
     ],
   },
   {

@@ -5,8 +5,8 @@ import { useState } from "react";
 const cart_list = [
   {
     id: 1,
-    img: "/assets/img/course/course-thumb-01.jpg",
-    course_name: "Master Web Design in Adobe XD",
+    img: "/assets/img/service/service-thumb-01.jpg",
+    service_name: "Master Web Design in Adobe XD",
     price: "130.00",
     quantity: "",
     total: "",
@@ -43,7 +43,7 @@ const CartArea = () => {
                     <thead>
                       <tr>
                         <th className="product-thumbnail">Images</th>
-                        <th className="cart-product-name">Courses</th>
+                        <th className="cart-product-name">services</th>
                         <th className="product-price">Unit Price</th>
                         <th className="product-quantity">Quantity</th>
                         <th className="product-subtotal">Total</th>
@@ -54,13 +54,13 @@ const CartArea = () => {
                       {cart_list.map((item, i) => (
                         <tr key={i}>
                           <td className="product-thumbnail">
-                            <Link href="/course-details">
+                            <Link href="/service-details">
                               <img src={item.img} alt="" />
                             </Link>
                           </td>
                           <td className="product-name">
-                            <Link href="/course-details">
-                              {item.course_name}
+                            <Link href="/service-details">
+                              {item.service_name}
                             </Link>
                           </td>
                           <td className="product-price">

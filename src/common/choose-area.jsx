@@ -22,7 +22,7 @@ const choose_list_data = [
     list: "High Quality Video  & Audio Classes",
   },
   {
-    list: "Finish Your Course, Get Certificate",
+    list: "Finish Your service, Get Certificate",
   },
 ];
 const ChooseArea = ({style_about, style_2}) => {

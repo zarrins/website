@@ -7,13 +7,13 @@ import Sidebar from "./sidebar";
 
 // category_data
 const category_data = [
-  {title: "تعمیر لباسشویی", link: ""},
-  {title: "تعمیر یخچال ", link: ""},
-  {title: "تعمیر ظرفشویی", link:""},
-  {title: "تعمیر جاروبرقی", link:""},
-  {title: "تعمیر ماکروفر", link:""},
-  {title: "تعمیر کولر گازی", link:""},
-  {title: "تعمیر پکیج", link:""},
+  {title: "تعمیر لباسشویی", link: ".././service-details/washing-machine"},
+  {title: "تعمیر یخچال ", link: ".././service-details/refrigrator"},
+  {title: "تعمیر ظرفشویی", link:".././service-details/dish-washer"},
+  {title: "تعمیر جاروبرقی", link:".././service-details/vacuum-cleaner"},
+  {title: "تعمیر ماکروفر", link:".././service-details/oven"},
+  {title: "تعمیر کولر گازی", link:".././service-details/cooler"},
+  {title: "تعمیر پکیج", link:".././service-details/heater"},
 ]
 const Header = () => {
 const {sticky} = useSticky()
@@ -26,7 +26,7 @@ const {sticky} = useSticky()
           <div className={`main-header header-xy-spacing ${sticky ? "header-sticky" : ""}`} id="header-sticky">
             <div className="container-fluid">
               <div className="row align-items-center">
-                <div className="col-xxl-3 col-xl-3 col-lg-5 col-md-6 col-6">
+                <div className="col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-6">
                   <div className="logo-area d-flex align-items-center">
                     <div className="logo">
                       <Link href="/">
@@ -46,7 +46,7 @@ const {sticky} = useSticky()
                             <ul className="sub-menu">
                               {category_data.map((item, i) => 
                                <li key={i}>
-                               <Link href="/course-grid">{item.title}</Link>
+                               <Link href={item.link}>{item.title}</Link>
                              </li>
                               )}
                             </ul>
@@ -56,7 +56,7 @@ const {sticky} = useSticky()
                     </div>
                   </div>
                 </div>
-                <div className="col-xxl-9 col-xl-9 col-lg-7 col-md-6 col-6 d-flex align-items-center justify-content-between">
+                <div className="col-xxl-8 col-xl-8 col-lg-7 col-md-6 col-6 d-flex align-items-center justify-content-between">
                   <div className="main-menu d-flex justify-content-end mr-15">
                     <nav id="mobile-menu" className="d-none d-xl-block">
                       <NavMenu />

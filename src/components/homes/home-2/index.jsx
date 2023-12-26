@@ -7,7 +7,7 @@ import AboutArea from "./about-area";
 import BlogArea from "./blog-area";
 import CategoryArea from "./category-area";
 import ChooseArea from "../../../common/choose-area";
-import CourseArea from "./course-area";
+import serviceArea from "./service-area";
 import HeroSlider from "./hero-slider";
 import TestimonialAreaTwo from "./testimonial-area-2";
 import VideoArea from "../../../common/video-area";
@@ -19,7 +19,7 @@ const HomeTwo = () => {
       <BrandArea style_2={true} />
       <AboutArea />
       <CategoryArea />
-      <CourseArea />
+      <serviceArea />
       <VideoArea />
       <CounterArea style_counter={true} />
       <ChooseArea style_2={true} />

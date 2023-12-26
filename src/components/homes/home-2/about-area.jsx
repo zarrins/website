@@ -20,7 +20,7 @@ const about_circle = [
   {
     id: 1,
     icon: "fi fi-rr-paper-plane",
-    text: "Online Courses",
+    text: "Online services",
   },
   {
     id: 2,

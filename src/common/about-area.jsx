@@ -6,24 +6,24 @@ import React from "react";
 const about_info = {
     students: "235K",
     review: "4.7",
-    pro_courses: "3.5K",
+    pro_services: "3.5K",
     title: 'Explore Thousands of Creative Classes.',
     des: <> Dramatically supply transparent deliverables befoe backward
     comp internal or "organic" sources.</>
 }
 
 
-const  { students, review, pro_courses, title, des} = about_info
+const  { students, review, pro_services, title, des} = about_info
 
 const about_list_data = [
   {
     name: "Create an E-Pora account",
   },
   {
-    name: "Choose Your Perfect Courses",
+    name: "Choose Your Perfect services",
   },
   {
-    name: "After Finished Courses, Get Certificate",
+    name: "After Finished services, Get Certificate",
   },
 ];
 const AboutArea = ({style_about}) => {
@@ -63,7 +63,7 @@ const AboutArea = ({style_about}) => {
                       Worldwide Review
                     </li>
                     <li>
-                      <span>{pro_courses}</span>Free Pro Courses
+                      <span>{pro_services}</span>Free Pro services
                     </li>
                   </ul>
                 </div>
@@ -92,7 +92,7 @@ const AboutArea = ({style_about}) => {
                 </div>
                 <div className="tp-about-btn-3">
                   <Link href="/about" className="tp-btn">
-                    Explore Courses
+                    Explore services
                   </Link>
                 </div>
               </div>

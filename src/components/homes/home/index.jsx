@@ -3,7 +3,7 @@ import AboutArea from "./about-area";
 import CategoryArea from "./category-area";
 import ChooseArea from "./choose-area";
 import CounterArea from "../../../common/counter-area";
-import CourseArea from "./course-area";
+import serviceArea from "../../services-list/service-area";
 import FeatureArea from "./feature-area";
 import HeroBanner from "./hero-banner";
 import InstructorArea from "../../../common/instructor-area";
@@ -19,14 +19,14 @@ const Home = () => {
       <CategoryArea />
       {/* <FeatureArea /> */}
       <AboutArea />
-      {/* <CourseArea /> */}
+      <serviceArea />
       <CounterArea />
       <ChooseArea />
       {/* <InstructorArea /> */}
       <SuitableArea style_2={true}/>
       {/* <TestimonialArea /> */}
       <BlogArea />
-      {/* <BrandArea style_1={true} /> */}
+      <BrandArea style_1={true} />
     </>
   );
 };

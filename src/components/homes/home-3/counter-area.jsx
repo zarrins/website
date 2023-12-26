@@ -22,7 +22,7 @@ const counter_data = [
     icon: "fi fi-rr-apps",
     count_number: 735,
     thousand: "",
-    title: "Professional Courses",
+    title: "Professional services",
   },
   {
     id: 4,

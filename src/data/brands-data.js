@@ -15,7 +15,7 @@ const brands_data = [
         img: "/assets/img/icon/brand-icon-05.png"
     },
     {
-        img: "/assets/img/icon/brand-icon-01.png"
+        img: "/assets/img/icon/brand-icon-06.png"
     },
     {
         img: "/assets/img/icon/brand-icon-02.png"

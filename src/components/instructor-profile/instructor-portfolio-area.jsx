@@ -1,8 +1,8 @@
 import Count from "@/src/common/count.jsx";
-import our_course_data from "@/src/data/our-course-data.js";
+import our_service_data from "@/src/data/our-service-data.js";
 import Link from "next/link";
 import React from "react";
-import course_data_2 from "../../data/course-data-2.js";
+import service_data_2 from "../../data/service-data-2.js";
 
 
 // instructor_portfolio_data
@@ -62,7 +62,7 @@ const counter_data = [
      icon: "fi fi-rr-document",
      count_number: 35,
      thousand: "",
-     title: "Professional Courses",
+     title: "Professional services",
    },
    {
      id: 3,
@@ -210,58 +210,58 @@ const InstructorPortfolioArea = () => {
                     
                   </div>
                 </div>
-                <div className="instructor-tp-course">
+                <div className="instructor-tp-service">
                   <div className="row">
                     <div className="col-md-12">
                       <div className="instruc-biography">
-                        <h2 className="ins-bio-title mb-35">Courses</h2>
+                        <h2 className="ins-bio-title mb-35">services</h2>
                       </div>
                     </div>
                   </div>
                   <div className="row">
-                    {our_course_data.slice(0, 4).map((item, i) => (
+                    {our_service_data.slice(0, 4).map((item, i) => (
                       <div key={i} className="col-xl-6 col-lg-12 col-md-6">
-                        <div className="tpcourse mb-40">
-                          <div className="tpcourse__thumb p-relative w-img fix">
-                            <Link href="/course-details">
-                              <img src={item.img} alt="course-thumb" />
+                        <div className="tpservice mb-40">
+                          <div className="tpservice__thumb p-relative w-img fix">
+                            <Link href="/service-details">
+                              <img src={item.img} alt="service-thumb" />
                             </Link>
-                            <div className="tpcourse__tag">
+                            <div className="tpservice__tag">
                               <Link href="#">
                                 <i className="fi fi-rr-heart"></i>
                               </Link>
                             </div>
-                            <div className="tpcourse__img-icon">
-                              <img src={item.icon} alt="course-avata" />
+                            <div className="tpservice__img-icon">
+                              <img src={item.icon} alt="service-avata" />
                             </div>
                           </div>
-                          <div className="tpcourse__content-2">
-                            <div className="tpcourse__category mb-10">
-                              <ul className="tpcourse__price-list d-flex align-items-center">
+                          <div className="tpservice__content-2">
+                            <div className="tpservice__category mb-10">
+                              <ul className="tpservice__price-list d-flex align-items-center">
                                 <li>
                                   <Link
                                     className={item.ct_color}
-                                    href="/course-details"
+                                    href="/service-details"
                                   >
-                                    {item.course_title}
+                                    {item.service_title}
                                   </Link>
                                 </li>
                                 <li>
                                   <Link
                                     className={item.cn_color}
-                                    href="/course-details"
+                                    href="/service-details"
                                   >
-                                    {item.course_name}
+                                    {item.service_name}
                                   </Link>
                                 </li>
                               </ul>
                             </div>
-                            <div className="tpcourse__ava-title mb-15">
-                              <h4 className="tpcourse__title">
-                                <Link href="/course-details">{item.title}</Link>
+                            <div className="tpservice__ava-title mb-15">
+                              <h4 className="tpservice__title">
+                                <Link href="/service-details">{item.title}</Link>
                               </h4>
                             </div>
-                            <div className="tpcourse__meta tpcourse__meta-gap pb-15 mb-15">
+                            <div className="tpservice__meta tpservice__meta-gap pb-15 mb-15">
                               <ul className="d-flex align-items-center">
                                 <li>
                                   <img
@@ -279,8 +279,8 @@ const InstructorPortfolioArea = () => {
                                 </li>
                               </ul>
                             </div>
-                            <div className="tpcourse__rating d-flex align-items-center justify-content-between">
-                              <div className="tpcourse__rating-icon">
+                            <div className="tpservice__rating d-flex align-items-center justify-content-between">
+                              <div className="tpservice__rating-icon">
                                 <span>4.7</span>
                                 <i className="fi fi-ss-star"></i>
                                 <i className="fi fi-ss-star"></i>
@@ -289,7 +289,7 @@ const InstructorPortfolioArea = () => {
                                 <i className="fi fi-rs-star"></i>
                                 <p>(125)</p>
                               </div>
-                              <div className="tpcourse__pricing">
+                              <div className="tpservice__pricing">
                                 <h5 className="price-title">$29.99</h5>
                               </div>
                             </div>

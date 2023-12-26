@@ -73,7 +73,7 @@ const ChooseArea = () => {
                 </div>
                 {/* <div className="choose-btn">
                   <Link href="/about" className="tp-btn">
-                    Explore Courses
+                    Explore services
                   </Link>
                 </div> */}
               </div>

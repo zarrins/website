@@ -6,10 +6,10 @@ const slider_data = [
   {
     id: 1,
     bg_img: "/assets/img/slider/slider-bg-01.jpg",
-    slider_text: "Learn New Skills & Popular Courses",
+    slider_text: "Learn New Skills & Popular services",
     title: "For Every Student, Every Classroom.",
-    total_courses: "3.5k",
-    courses_text: "Free Pro Courses",
+    total_services: "3.5k",
+    services_text: "Free Pro services",
     students: "235k",
     st_text: "Worldwide Students",
     review: "4.7",
@@ -18,10 +18,10 @@ const slider_data = [
   {
     id: 2,
     bg_img: "/assets/img/slider/slider-bg-02.jpg",
-    slider_text: "Learn New Skills & Popular Courses",
+    slider_text: "Learn New Skills & Popular services",
     title: "For Every Student, Every Classroom.",
-    total_courses: "3.5k",
-    courses_text: "Free Pro Courses",
+    total_services: "3.5k",
+    services_text: "Free Pro services",
     students: "235k",
     st_text: "Worldwide Students",
     review: "4.7",
@@ -90,12 +90,12 @@ const HeroSlider = () => {
                             {item.title}
                           </h2>
                           <div className="slider-btn">
-                            <Link className="tp-btn mr-5" href="/course-list">
-                              Explore Courses
+                            <Link className="tp-btn mr-5" href="/service-list">
+                              Explore services
                             </Link> {" "}
                             <Link
                               className="tp-s-border-btn"
-                              href="/course-list"
+                              href="/service-list"
                             >
                               Watch Videos
                             </Link>
@@ -106,7 +106,7 @@ const HeroSlider = () => {
                         <div className="slider-info-list">
                           <ul>
                             <li>
-                              <span>{item.total_courses}</span> {item.courses_text}
+                              <span>{item.total_services}</span> {item.services_text}
                             </li>
                             <li>
                               <span>{item.students}</span>{item.st_text}

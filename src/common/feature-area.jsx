@@ -4,7 +4,7 @@ import React from "react";
 const feature_data_3 = [
   {
     icon: "fi fi-rr-paper-plane",
-    title: "Online Courses",
+    title: "Online services",
   },
   {
     icon: "fi fi-rr-user",

@@ -1,12 +1,12 @@
-import course_data_2 from "@/src/data/course-data-2";
+import service_data_2 from "@/src/data/service-data-2";
 import Link from "next/link";
 import React from "react";
 
-const CourseArea = () => {
+const serviceArea = () => {
   return (
     <>
       <section
-        className="course-wrap-area bg-bottom grey-bg pt-115 pb-60 wow fadeInUp"
+        className="service-wrap-area bg-bottom grey-bg pt-115 pb-60 wow fadeInUp"
         data-wow-duration=".8s"
         data-wow-delay=".4s"
         style={{ backgroundImage: `url(/assets/img/bg/shape-bg-1.png)` }}
@@ -15,40 +15,40 @@ const CourseArea = () => {
           <div className="row justify-content-center align-items-center">
             <div className="col-xl-6 col-lg-8 col-md-8">
               <div className="section-title mb-65">
-                <span className="tp-sub-title-box mb-15">Our Courses</span>
+                <span className="tp-sub-title-box mb-15">Our services</span>
                 <h2 className="tp-section-title mb-20">
-                  Explore Popular Courses
+                  Explore Popular services
                 </h2>
               </div>
             </div>
             <div className="col-xl-6 col-lg-4 col-md-4">
-              <div className="tp-course-btn mb-40 d-flex justify-content-md-end">
+              <div className="tp-service-btn mb-40 d-flex justify-content-md-end">
                 <a className="tp-btn" href="#">
-                  Browse All Courses
+                  Browse All services
                 </a>
               </div>
             </div>
           </div>
           <div className="row">
-            {course_data_2.map((item) => (
+            {service_data_2.map((item) => (
               <div key={item.id} className="col-lg-6 col-md-12">
-                <div className="tpcourse tp-wrap-course mb-40">
+                <div className="tpservice tp-wrap-service mb-40">
                   <div className="row">
-                    <div className="col-xl-4 tpcourse-thumb-w">
-                      <div className="tpcourse__thumb p-relative w-img fix">
-                        <Link href="/course-details">
-                          <img src={item.img} alt="course-thumb" />
+                    <div className="col-xl-4 tpservice-thumb-w">
+                      <div className="tpservice__thumb p-relative w-img fix">
+                        <Link href="/service-details">
+                          <img src={item.img} alt="service-thumb" />
                         </Link>
                       </div>
                     </div>
-                    <div className="col-xl-8 tpcourse-thumb-text">
-                      <div className="tp-wrap-course__content ml-5">
-                        <div className="tp-wrap-course__heading">
-                          <h4 className="tp-wrap-course__title mb-20">
-                            <Link href="/course-details">{item.title}</Link>
+                    <div className="col-xl-8 tpservice-thumb-text">
+                      <div className="tp-wrap-service__content ml-5">
+                        <div className="tp-wrap-service__heading">
+                          <h4 className="tp-wrap-service__title mb-20">
+                            <Link href="/service-details">{item.title}</Link>
                           </h4>
                         </div>
-                        <div className="tpcourse__meta tp-course-line pb-20 mb-25">
+                        <div className="tpservice__meta tp-service-line pb-20 mb-25">
                           <ul className="d-flex align-items-center">
                             <li>
                               <img
@@ -73,19 +73,19 @@ const CourseArea = () => {
                             </li>
                           </ul>
                         </div>
-                        <div className="tpcourse__category c-price-list d-flex align-items-center justify-content-between">
-                          <h5 className="tpcourse__course-price c-price-pac">
-                            ${item.course_price}
+                        <div className="tpservice__category c-price-list d-flex align-items-center justify-content-between">
+                          <h5 className="tpservice__service-price c-price-pac">
+                            ${item.service_price}
                           </h5>
-                          <ul className="tpcourse__price-list d-flex align-items-center">
+                          <ul className="tpservice__price-list d-flex align-items-center">
                             <li>
-                              <Link href="/course-details">
-                                {item.course_title}
+                              <Link href="/service-details">
+                                {item.service_title}
                               </Link>
                             </li>
                             <li>
-                              <Link href="/course-details">
-                                {item.course_name}
+                              <Link href="/service-details">
+                                {item.service_name}
                               </Link>
                             </li>
                           </ul>
@@ -103,4 +103,4 @@ const CourseArea = () => {
   );
 };
 
-export default CourseArea;
+export default serviceArea;

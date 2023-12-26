@@ -10,7 +10,7 @@ const footer_data = [
       { name: "درباره ما", link: "/about" },
       { name: "وبلاگ", link: "/blog" },
       { name: "پرسش های متداول", link: "/faq" },
-      { name: "خدمات", link: "/services" },
+      { name: "خدمات", link: "/service-list" },
     ],
   },
   {
@@ -137,18 +137,18 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="f-copyright pt-60 pb-30">
+          <div className="f-copyright pt-30 pb-20">
             <div className="container">
-              <div className="row">
-                <div className="col-md-5">
+              <div className="row justify-content-center">
+                {/* <div className="col-md-5">
                   <div className="f-copyright__logo mb-30">
                     <a href="#">
                       <img src={logo} alt="logo" />
                     </a>
                   </div>
-                </div>
+                </div> */}
                 <div className="col-md-7">
-                  <div className="f-copyright__text text-md-end mb-30">
+                  <div className="f-copyright__text text-md-center mb-30">
                     <span>{copyright_text}</span>
                   </div>
                 </div>

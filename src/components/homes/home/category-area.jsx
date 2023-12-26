@@ -7,7 +7,7 @@ const category_data = [
     id: 1,
     icon: "/assets/img/washing-machine.png",
     title: "تعمیر لباسشویی",
-    link: "/course-grid",
+    link: "/service-grid",
 
   },
   {
@@ -15,7 +15,7 @@ const category_data = [
     icon: "/assets/img/washing-machine.png",
     title: "تعمیر یخچال",
     // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
-    link: "/course-grid",
+    link: "/service-grid",
   },
 
   {
@@ -23,7 +23,7 @@ const category_data = [
     icon: "/assets/img/washing-machine.png",
     title: "تعمیر ظرفشویی",
     // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
-    link: "/course-grid",
+    link: "/service-grid",
 
   },
   {
@@ -31,7 +31,7 @@ const category_data = [
     icon: "/assets/img/washing-machine.png",
     title: "تعمیر جاروبرقی",
     // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
-    link: "/course-grid",
+    link: "/service-grid",
 
   },
   {
@@ -39,7 +39,7 @@ const category_data = [
     icon: "/assets/img/washing-machine.png",
     title: "تعمیر ماکروفر",
     // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
-    link: "/course-grid",
+    link: "/service-grid",
 
   },
   {
@@ -47,7 +47,7 @@ const category_data = [
     icon: "/assets/img/washing-machine.png",
     title: "تعمیر کولرگازی",
     // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
-    link: "/course-grid",
+    link: "/service-grid",
 
   },
   {
@@ -55,7 +55,7 @@ const category_data = [
     icon: "/assets/img/washing-machine.png",
     title: "تعمیر پکیج",
     // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
-    link: "/course-grid",
+    link: "/service-grid",
 
   },
 ];

@@ -47,7 +47,7 @@ const HeaderThree = () => {
                             <ul className="sub-menu">
                               {category_data.map((item, i) => (
                                 <li key={i}>
-                                  <Link href="/course-grid">{item.title}</Link>
+                                  <Link href="/service-grid">{item.title}</Link>
                                 </li>
                               ))}
                             </ul>

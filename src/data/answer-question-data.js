@@ -1,7 +1,7 @@
 const answer_question_data = [
   {
     id: 1,
-    question: "Do I receive anything after I complete a course?",
+    question: "Do I receive anything after I complete a service?",
     answer: (
       <>
         Proactively initiate corporate vortals via bricks-and-clicks
@@ -21,10 +21,10 @@ const answer_question_data = [
   },
   {
     id: 2,
-    question: "Is there any way to preview a course?",
+    question: "Is there any way to preview a service?",
     answer: (
       <>
-       Proactively initiate corporate vortals via bricks-and-clicks
+        Proactively initiate corporate vortals via bricks-and-clicks
         relationships. Dynamically envisioneer cutting-edge paradigms via
         client-centered relationships. Globally repurpose backward-compatible
         growth strategies and fully tested e-services. Energistically promote
@@ -61,7 +61,7 @@ const answer_question_data = [
   },
   {
     id: 4,
-    question: "Do I have to start my Epora course at a certain time?",
+    question: "Do I have to start my Epora service at a certain time?",
     answer: (
       <>
         Proactively initiate corporate vortals via bricks-and-clicks
@@ -81,7 +81,7 @@ const answer_question_data = [
   },
   {
     id: 5,
-    question: "What if I don’t like a course I purchased?",
+    question: "What if I don’t like a service I purchased?",
     answer: (
       <>
         Proactively initiate corporate vortals via bricks-and-clicks
@@ -121,7 +121,7 @@ const answer_question_data = [
   },
   {
     id: 7,
-    question: "How can I pay for a course?",
+    question: "How can I pay for a service?",
     answer: (
       <>
         Proactively initiate corporate vortals via bricks-and-clicks

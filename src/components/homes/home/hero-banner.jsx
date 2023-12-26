@@ -15,7 +15,7 @@ const HeroBanner = () => {
                      <div className="banner-info d-none">
                         <ul>
                            <li><span>235K</span>Worldwide Students</li>
-                           <li><span>3.5K</span>Free Pro Courses</li>
+                           <li><span>3.5K</span>Free Pro services</li>
                            <li><span>4.7<i className="fi fi-rr-star "></i></span>Worldwide Review</li>
                         </ul>
                      </div>
@@ -27,7 +27,7 @@ const HeroBanner = () => {
                         <h2 className="hero-title mb-35">نصب و تعمیر انواع برند لوازم خانگی توسط تیم  <i>تماس با سرویس</i></h2>
                         <p>تیم ما متناسب با مشکل، مدل و برند دستگاه؛ بهترین متخصص را به شما اختصاص میدهد. </p>
                         <div className="tp-banner-btn">
-                           <Link href="/course-list" className="tp-btn">ثبت درخواست تعمیرات</Link>
+                           <Link href="/service-list" className="tp-btn">ثبت درخواست تعمیرات</Link>
                         </div>
                      </div>
                   </div>

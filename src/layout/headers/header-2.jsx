@@ -7,13 +7,13 @@ import Sidebar from './sidebar';
 
 // category_data
 const category_data = [
-   {title: "تعمیر لباسشویی", link: ""},
-  {title: "تعمیر یخچال ", link: ""},
-  {title: "تعمیر ظرفشویی", link:""},
-  {title: "تعمیر جاروبرقی", link:""},
-  {title: "تعمیر ماکروفر", link:""},
-  {title: "تعمیر کولر گازی", link:""},
-  {title: "تعمیر پکیج", link:""},
+   {title: "تعمیر لباسشویی", link: ".././service-details/washing-machine"},
+  {title: "تعمیر یخچال ", link: ".././service-details/refrigrator"},
+  {title: "تعمیر ظرفشویی", link:".././service-details/dish-washer"},
+  {title: "تعمیر جاروبرقی", link:".././service-details/vacuum-cleaner"},
+  {title: "تعمیر ماکروفر", link:".././service-details/oven"},
+  {title: "تعمیر کولر گازی", link:".././service-details/cooler"},
+  {title: "تعمیر پکیج", link:".././service-details/heater"},
 ]
 
 const HeaderTwo = () => {
@@ -43,7 +43,7 @@ const {sticky} = useSticky()
                                  <ul className="sub-menu">
                                     {category_data.map((item, i) => 
                                     <li key={i}>
-                                    <Link href="/course-grid">{item.title}</Link>
+                                    <Link href={item.link}>{item.title}</Link>
                                     </li>
                                     )}
                                  </ul>

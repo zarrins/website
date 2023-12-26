@@ -25,7 +25,7 @@ const choose_data_3 = [
   },
   {
     id: 3,
-    title: "Finish Your Course, Get Certificate",
+    title: "Finish Your service, Get Certificate",
     des: (
       <>
         Holisticly parallel task diverse architectures after top-line

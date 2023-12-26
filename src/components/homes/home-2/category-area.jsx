@@ -27,7 +27,7 @@ const CategoryArea = () => {
                     <img src={item.icon} alt="category-img" />
                   </div>
                   <h4 className="tp-category-title tp-r-cat-title">
-                    <Link href="/course-grid">{item.title}</Link>
+                    <Link href="/service-grid">{item.title}</Link>
                   </h4>
                   <p>{item.available}</p>
                 </div>

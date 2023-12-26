@@ -1,12 +1,12 @@
-import our_course_data from "@/src/data/our-course-data";
+import our_service_data from "@/src/data/our-service-data";
 import Link from "next/link";
 import React from "react";
 
-const OurCourse = () => {
+const Ourservice = () => {
   return (
     <>
       <section
-        className="course-area pt-115 pb-100 wow fadeInUp"
+        className="service-area pt-115 pb-100 wow fadeInUp"
         data-wow-duration=".8s"
         data-wow-delay=".3s"
       >
@@ -14,15 +14,15 @@ const OurCourse = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="section-title text-center mb-65">
-                <span className="tp-bline-stitle mb-15">Our Courses</span>
+                <span className="tp-bline-stitle mb-15">Our services</span>
                 <h2 className="tp-section-title mb-20">
-                  Explore Popular Courses
+                  Explore Popular services
                 </h2>
               </div>
             </div>
           </div>
-          {/* <!-- course-nav-tab-start --> */}
-          <div className="tp-course-nav-tabs">
+          {/* <!-- service-nav-tab-start --> */}
+          <div className="tp-service-nav-tabs">
             <nav>
               <div
                 className="nav d-flex justify-content-center mb-50"
@@ -30,7 +30,7 @@ const OurCourse = () => {
                 role="tablist"
               >
                 <button
-                  className="tp-course-tab active"
+                  className="tp-service-tab active"
                   id="nav-all-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#nav-all"
@@ -43,7 +43,7 @@ const OurCourse = () => {
                   All
                 </button>
                 <button
-                  className="tp-course-tab"
+                  className="tp-service-tab"
                   id="nav-design-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#nav-design"
@@ -56,7 +56,7 @@ const OurCourse = () => {
                   Design
                 </button>
                 <button
-                  className="tp-course-tab"
+                  className="tp-service-tab"
                   id="nav-develop-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#nav-develop"
@@ -69,7 +69,7 @@ const OurCourse = () => {
                   Devlopment
                 </button>
                 <button
-                  className="tp-course-tab"
+                  className="tp-service-tab"
                   id="nav-contact-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#nav-contact"
@@ -82,7 +82,7 @@ const OurCourse = () => {
                   Content Writing
                 </button>
                 <button
-                  className="tp-course-tab"
+                  className="tp-service-tab"
                   id="nav-search-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#nav-search "
@@ -95,7 +95,7 @@ const OurCourse = () => {
                   Search Engine
                 </button>
                 <button
-                  className="tp-course-tab"
+                  className="tp-service-tab"
                   id="nav-marketing-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#nav-marketing"
@@ -117,49 +117,49 @@ const OurCourse = () => {
                 aria-labelledby="nav-all-tab"
               >
                 <div className="row">
-                  {our_course_data.slice(0, 6).map((item, i) => (
+                  {our_service_data.slice(0, 6).map((item, i) => (
                     <div key={i} className="col-xl-4 col-lg-6 col-md-6">
-                      <div className="tpcourse mb-40">
-                        <div className="tpcourse__thumb p-relative w-img fix">
-                          <Link href="/course-details">
+                      <div className="tpservice mb-40">
+                        <div className="tpservice__thumb p-relative w-img fix">
+                          <Link href="/service-details">
                             <img src={item.img} alt={item.title} />
                           </Link>
-                          <div className="tpcourse__tag">
-                            <Link href="/course-details">
+                          <div className="tpservice__tag">
+                            <Link href="/service-details">
                               <i className="fi fi-rr-heart"></i>
                             </Link>
                           </div>
-                          <div className="tpcourse__img-icon">
+                          <div className="tpservice__img-icon">
                             <img src={item.icon} alt={item.title} />
                           </div>
                         </div>
-                        <div className="tpcourse__content-2">
-                          <div className="tpcourse__category mb-10">
-                            <ul className="tpcourse__price-list d-flex align-items-center">
+                        <div className="tpservice__content-2">
+                          <div className="tpservice__category mb-10">
+                            <ul className="tpservice__price-list d-flex align-items-center">
                               <li>
                                 <Link
                                   className={item.ct_color}
-                                  href="/course-details"
+                                  href="/service-details"
                                 >
-                                  {item.course_title}
+                                  {item.service_title}
                                 </Link>
                               </li>
                               <li>
                                 <Link
                                   className={item.cn_color}
-                                  href="/course-details"
+                                  href="/service-details"
                                 >
-                                  {item.course_name}
+                                  {item.service_name}
                                 </Link>
                               </li>
                             </ul>
                           </div>
-                          <div className="tpcourse__ava-title mb-15">
-                            <h4 className="tpcourse__title tp-cours-title-color">
-                              <Link href="course-details">{item.title}</Link>
+                          <div className="tpservice__ava-title mb-15">
+                            <h4 className="tpservice__title tp-cours-title-color">
+                              <Link href="service-details">{item.title}</Link>
                             </h4>
                           </div>
-                          <div className="tpcourse__meta tpcourse__meta-gap pb-15 mb-15">
+                          <div className="tpservice__meta tpservice__meta-gap pb-15 mb-15">
                             <ul className="d-flex align-items-center">
                               <li>
                                 <img
@@ -177,8 +177,8 @@ const OurCourse = () => {
                               </li>
                             </ul>
                           </div>
-                          <div className="tpcourse__rating d-flex align-items-center justify-content-between">
-                            <div className="tpcourse__rating-icon">
+                          <div className="tpservice__rating d-flex align-items-center justify-content-between">
+                            <div className="tpservice__rating-icon">
                               <span>{item.start_text}</span>
                               <i className="fi fi-ss-star"></i>
                               <i className="fi fi-ss-star"></i>
@@ -187,9 +187,9 @@ const OurCourse = () => {
                               <i className="fi fi-rs-star"></i>
                               <p>(125)</p>
                             </div>
-                            <div className="tpcourse__pricing">
+                            <div className="tpservice__pricing">
                               <h5 className="price-title">
-                                ${item.course_price}
+                                ${item.service_price}
                               </h5>
                             </div>
                           </div>
@@ -207,49 +207,49 @@ const OurCourse = () => {
                 aria-labelledby="nav-design-tab"
               >
                 <div className="row">
-                  {our_course_data.slice(6, 12).map((item, i) => (
+                  {our_service_data.slice(6, 12).map((item, i) => (
                     <div key={i} className="col-xl-4 col-lg-6 col-md-6">
-                      <div className="tpcourse mb-40">
-                        <div className="tpcourse__thumb p-relative w-img fix">
-                          <Link href="/course-details">
+                      <div className="tpservice mb-40">
+                        <div className="tpservice__thumb p-relative w-img fix">
+                          <Link href="/service-details">
                             <img src={item.img} alt={item.title} />
                           </Link>
-                          <div className="tpcourse__tag">
-                            <Link href="/course-details">
+                          <div className="tpservice__tag">
+                            <Link href="/service-details">
                               <i className="fi fi-rr-heart"></i>
                             </Link>
                           </div>
-                          <div className="tpcourse__img-icon">
+                          <div className="tpservice__img-icon">
                             <img src={item.icon} alt={item.title} />
                           </div>
                         </div>
-                        <div className="tpcourse__content-2">
-                          <div className="tpcourse__category mb-10">
-                            <ul className="tpcourse__price-list d-flex align-items-center">
+                        <div className="tpservice__content-2">
+                          <div className="tpservice__category mb-10">
+                            <ul className="tpservice__price-list d-flex align-items-center">
                               <li>
                                 <Link
                                   className={item.ct_color}
-                                  href="/course-details"
+                                  href="/service-details"
                                 >
-                                  {item.course_title}
+                                  {item.service_title}
                                 </Link>
                               </li>
                               <li>
                                 <Link
                                   className={item.cn_color}
-                                  href="/course-details"
+                                  href="/service-details"
                                 >
-                                  {item.course_name}
+                                  {item.service_name}
                                 </Link>
                               </li>
                             </ul>
                           </div>
-                          <div className="tpcourse__ava-title mb-15">
-                            <h4 className="tpcourse__title tp-cours-title-color">
-                              <Link href="course-details">{item.title}</Link>
+                          <div className="tpservice__ava-title mb-15">
+                            <h4 className="tpservice__title tp-cours-title-color">
+                              <Link href="service-details">{item.title}</Link>
                             </h4>
                           </div>
-                          <div className="tpcourse__meta tpcourse__meta-gap pb-15 mb-15">
+                          <div className="tpservice__meta tpservice__meta-gap pb-15 mb-15">
                             <ul className="d-flex align-items-center">
                               <li>
                                 <img
@@ -267,8 +267,8 @@ const OurCourse = () => {
                               </li>
                             </ul>
                           </div>
-                          <div className="tpcourse__rating d-flex align-items-center justify-content-between">
-                            <div className="tpcourse__rating-icon">
+                          <div className="tpservice__rating d-flex align-items-center justify-content-between">
+                            <div className="tpservice__rating-icon">
                               <span>{item.start_text}</span>
                               <i className="fi fi-ss-star"></i>
                               <i className="fi fi-ss-star"></i>
@@ -277,9 +277,9 @@ const OurCourse = () => {
                               <i className="fi fi-rs-star"></i>
                               <p>(125)</p>
                             </div>
-                            <div className="tpcourse__pricing">
+                            <div className="tpservice__pricing">
                               <h5 className="price-title">
-                                ${item.course_price}
+                                ${item.service_price}
                               </h5>
                             </div>
                           </div>
@@ -297,49 +297,49 @@ const OurCourse = () => {
                 aria-labelledby="nav-develop-tab"
               >
                 <div className="row">
-                  {our_course_data.slice(12, 18).map((item, i) => (
+                  {our_service_data.slice(12, 18).map((item, i) => (
                     <div key={i} className="col-xl-4 col-lg-6 col-md-6">
-                      <div className="tpcourse mb-40">
-                        <div className="tpcourse__thumb p-relative w-img fix">
-                          <Link href="/course-details">
+                      <div className="tpservice mb-40">
+                        <div className="tpservice__thumb p-relative w-img fix">
+                          <Link href="/service-details">
                             <img src={item.img} alt={item.title} />
                           </Link>
-                          <div className="tpcourse__tag">
-                            <Link href="/course-details">
+                          <div className="tpservice__tag">
+                            <Link href="/service-details">
                               <i className="fi fi-rr-heart"></i>
                             </Link>
                           </div>
-                          <div className="tpcourse__img-icon">
+                          <div className="tpservice__img-icon">
                             <img src={item.icon} alt={item.title} />
                           </div>
                         </div>
-                        <div className="tpcourse__content-2">
-                          <div className="tpcourse__category mb-10">
-                            <ul className="tpcourse__price-list d-flex align-items-center">
+                        <div className="tpservice__content-2">
+                          <div className="tpservice__category mb-10">
+                            <ul className="tpservice__price-list d-flex align-items-center">
                               <li>
                                 <Link
                                   className={item.ct_color}
-                                  href="/course-details"
+                                  href="/service-details"
                                 >
-                                  {item.course_title}
+                                  {item.service_title}
                                 </Link>
                               </li>
                               <li>
                                 <Link
                                   className={item.cn_color}
-                                  href="/course-details"
+                                  href="/service-details"
                                 >
-                                  {item.course_name}
+                                  {item.service_name}
                                 </Link>
                               </li>
                             </ul>
                           </div>
-                          <div className="tpcourse__ava-title mb-15">
-                            <h4 className="tpcourse__title tp-cours-title-color">
-                              <Link href="course-details">{item.title}</Link>
+                          <div className="tpservice__ava-title mb-15">
+                            <h4 className="tpservice__title tp-cours-title-color">
+                              <Link href="service-details">{item.title}</Link>
                             </h4>
                           </div>
-                          <div className="tpcourse__meta tpcourse__meta-gap pb-15 mb-15">
+                          <div className="tpservice__meta tpservice__meta-gap pb-15 mb-15">
                             <ul className="d-flex align-items-center">
                               <li>
                                 <img
@@ -357,8 +357,8 @@ const OurCourse = () => {
                               </li>
                             </ul>
                           </div>
-                          <div className="tpcourse__rating d-flex align-items-center justify-content-between">
-                            <div className="tpcourse__rating-icon">
+                          <div className="tpservice__rating d-flex align-items-center justify-content-between">
+                            <div className="tpservice__rating-icon">
                               <span>{item.start_text}</span>
                               <i className="fi fi-ss-star"></i>
                               <i className="fi fi-ss-star"></i>
@@ -367,9 +367,9 @@ const OurCourse = () => {
                               <i className="fi fi-rs-star"></i>
                               <p>(125)</p>
                             </div>
-                            <div className="tpcourse__pricing">
+                            <div className="tpservice__pricing">
                               <h5 className="price-title">
-                                ${item.course_price}
+                                ${item.service_price}
                               </h5>
                             </div>
                           </div>
@@ -387,49 +387,49 @@ const OurCourse = () => {
                 aria-labelledby="nav-contact-tab"
               >
                 <div className="row">
-                  {our_course_data.slice(18, 24).map((item, i) => (
+                  {our_service_data.slice(18, 24).map((item, i) => (
                     <div key={i} className="col-xl-4 col-lg-6 col-md-6">
-                      <div className="tpcourse mb-40">
-                        <div className="tpcourse__thumb p-relative w-img fix">
-                          <Link href="/course-details">
+                      <div className="tpservice mb-40">
+                        <div className="tpservice__thumb p-relative w-img fix">
+                          <Link href="/service-details">
                             <img src={item.img} alt={item.title} />
                           </Link>
-                          <div className="tpcourse__tag">
-                            <Link href="/course-details">
+                          <div className="tpservice__tag">
+                            <Link href="/service-details">
                               <i className="fi fi-rr-heart"></i>
                             </Link>
                           </div>
-                          <div className="tpcourse__img-icon">
+                          <div className="tpservice__img-icon">
                             <img src={item.icon} alt={item.title} />
                           </div>
                         </div>
-                        <div className="tpcourse__content-2">
-                          <div className="tpcourse__category mb-10">
-                            <ul className="tpcourse__price-list d-flex align-items-center">
+                        <div className="tpservice__content-2">
+                          <div className="tpservice__category mb-10">
+                            <ul className="tpservice__price-list d-flex align-items-center">
                               <li>
                                 <Link
                                   className={item.ct_color}
-                                  href="/course-details"
+                                  href="/service-details"
                                 >
-                                  {item.course_title}
+                                  {item.service_title}
                                 </Link>
                               </li>
                               <li>
                                 <Link
                                   className={item.cn_color}
-                                  href="/course-details"
+                                  href="/service-details"
                                 >
-                                  {item.course_name}
+                                  {item.service_name}
                                 </Link>
                               </li>
                             </ul>
                           </div>
-                          <div className="tpcourse__ava-title mb-15">
-                            <h4 className="tpcourse__title tp-cours-title-color">
-                              <Link href="course-details">{item.title}</Link>
+                          <div className="tpservice__ava-title mb-15">
+                            <h4 className="tpservice__title tp-cours-title-color">
+                              <Link href="service-details">{item.title}</Link>
                             </h4>
                           </div>
-                          <div className="tpcourse__meta tpcourse__meta-gap pb-15 mb-15">
+                          <div className="tpservice__meta tpservice__meta-gap pb-15 mb-15">
                             <ul className="d-flex align-items-center">
                               <li>
                                 <img
@@ -447,8 +447,8 @@ const OurCourse = () => {
                               </li>
                             </ul>
                           </div>
-                          <div className="tpcourse__rating d-flex align-items-center justify-content-between">
-                            <div className="tpcourse__rating-icon">
+                          <div className="tpservice__rating d-flex align-items-center justify-content-between">
+                            <div className="tpservice__rating-icon">
                               <span>{item.start_text}</span>
                               <i className="fi fi-ss-star"></i>
                               <i className="fi fi-ss-star"></i>
@@ -457,9 +457,9 @@ const OurCourse = () => {
                               <i className="fi fi-rs-star"></i>
                               <p>(125)</p>
                             </div>
-                            <div className="tpcourse__pricing">
+                            <div className="tpservice__pricing">
                               <h5 className="price-title">
-                                ${item.course_price}
+                                ${item.service_price}
                               </h5>
                             </div>
                           </div>
@@ -476,49 +476,49 @@ const OurCourse = () => {
                 aria-labelledby="nav-search-tab"
               >
                 <div className="row">
-                  {our_course_data.slice(24, 30).map((item, i) => (
+                  {our_service_data.slice(24, 30).map((item, i) => (
                     <div key={i} className="col-xl-4 col-lg-6 col-md-6">
-                      <div className="tpcourse mb-40">
-                        <div className="tpcourse__thumb p-relative w-img fix">
-                          <Link href="/course-details">
+                      <div className="tpservice mb-40">
+                        <div className="tpservice__thumb p-relative w-img fix">
+                          <Link href="/service-details">
                             <img src={item.img} alt={item.title} />
                           </Link>
-                          <div className="tpcourse__tag">
-                            <Link href="/course-details">
+                          <div className="tpservice__tag">
+                            <Link href="/service-details">
                               <i className="fi fi-rr-heart"></i>
                             </Link>
                           </div>
-                          <div className="tpcourse__img-icon">
+                          <div className="tpservice__img-icon">
                             <img src={item.icon} alt={item.title} />
                           </div>
                         </div>
-                        <div className="tpcourse__content-2">
-                          <div className="tpcourse__category mb-10">
-                            <ul className="tpcourse__price-list d-flex align-items-center">
+                        <div className="tpservice__content-2">
+                          <div className="tpservice__category mb-10">
+                            <ul className="tpservice__price-list d-flex align-items-center">
                               <li>
                                 <Link
                                   className={item.ct_color}
-                                  href="/course-details"
+                                  href="/service-details"
                                 >
-                                  {item.course_title}
+                                  {item.service_title}
                                 </Link>
                               </li>
                               <li>
                                 <Link
                                   className={item.cn_color}
-                                  href="/course-details"
+                                  href="/service-details"
                                 >
-                                  {item.course_name}
+                                  {item.service_name}
                                 </Link>
                               </li>
                             </ul>
                           </div>
-                          <div className="tpcourse__ava-title mb-15">
-                            <h4 className="tpcourse__title tp-cours-title-color">
-                              <Link href="course-details">{item.title}</Link>
+                          <div className="tpservice__ava-title mb-15">
+                            <h4 className="tpservice__title tp-cours-title-color">
+                              <Link href="service-details">{item.title}</Link>
                             </h4>
                           </div>
-                          <div className="tpcourse__meta tpcourse__meta-gap pb-15 mb-15">
+                          <div className="tpservice__meta tpservice__meta-gap pb-15 mb-15">
                             <ul className="d-flex align-items-center">
                               <li>
                                 <img
@@ -536,8 +536,8 @@ const OurCourse = () => {
                               </li>
                             </ul>
                           </div>
-                          <div className="tpcourse__rating d-flex align-items-center justify-content-between">
-                            <div className="tpcourse__rating-icon">
+                          <div className="tpservice__rating d-flex align-items-center justify-content-between">
+                            <div className="tpservice__rating-icon">
                               <span>{item.start_text}</span>
                               <i className="fi fi-ss-star"></i>
                               <i className="fi fi-ss-star"></i>
@@ -546,9 +546,9 @@ const OurCourse = () => {
                               <i className="fi fi-rs-star"></i>
                               <p>(125)</p>
                             </div>
-                            <div className="tpcourse__pricing">
+                            <div className="tpservice__pricing">
                               <h5 className="price-title">
-                                ${item.course_price}
+                                ${item.service_price}
                               </h5>
                             </div>
                           </div>
@@ -566,49 +566,49 @@ const OurCourse = () => {
                 aria-labelledby="nav-marketing-tab"
               >
                 <div className="row">
-                  {our_course_data.slice(30, 36).map((item, i) => (
+                  {our_service_data.slice(30, 36).map((item, i) => (
                     <div key={i} className="col-xl-4 col-lg-6 col-md-6">
-                      <div className="tpcourse mb-40">
-                        <div className="tpcourse__thumb p-relative w-img fix">
-                          <Link href="/course-details">
+                      <div className="tpservice mb-40">
+                        <div className="tpservice__thumb p-relative w-img fix">
+                          <Link href="/service-details">
                             <img src={item.img} alt={item.title} />
                           </Link>
-                          <div className="tpcourse__tag">
-                            <Link href="/course-details">
+                          <div className="tpservice__tag">
+                            <Link href="/service-details">
                               <i className="fi fi-rr-heart"></i>
                             </Link>
                           </div>
-                          <div className="tpcourse__img-icon">
+                          <div className="tpservice__img-icon">
                             <img src={item.icon} alt={item.title} />
                           </div>
                         </div>
-                        <div className="tpcourse__content-2">
-                          <div className="tpcourse__category mb-10">
-                            <ul className="tpcourse__price-list d-flex align-items-center">
+                        <div className="tpservice__content-2">
+                          <div className="tpservice__category mb-10">
+                            <ul className="tpservice__price-list d-flex align-items-center">
                               <li>
                                 <Link
                                   className={item.ct_color}
-                                  href="/course-details"
+                                  href="/service-details"
                                 >
-                                  {item.course_title}
+                                  {item.service_title}
                                 </Link>
                               </li>
                               <li>
                                 <Link
                                   className={item.cn_color}
-                                  href="/course-details"
+                                  href="/service-details"
                                 >
-                                  {item.course_name}
+                                  {item.service_name}
                                 </Link>
                               </li>
                             </ul>
                           </div>
-                          <div className="tpcourse__ava-title mb-15">
-                            <h4 className="tpcourse__title tp-cours-title-color">
-                              <Link href="course-details">{item.title}</Link>
+                          <div className="tpservice__ava-title mb-15">
+                            <h4 className="tpservice__title tp-cours-title-color">
+                              <Link href="service-details">{item.title}</Link>
                             </h4>
                           </div>
-                          <div className="tpcourse__meta tpcourse__meta-gap pb-15 mb-15">
+                          <div className="tpservice__meta tpservice__meta-gap pb-15 mb-15">
                             <ul className="d-flex align-items-center">
                               <li>
                                 <img
@@ -626,8 +626,8 @@ const OurCourse = () => {
                               </li>
                             </ul>
                           </div>
-                          <div className="tpcourse__rating d-flex align-items-center justify-content-between">
-                            <div className="tpcourse__rating-icon">
+                          <div className="tpservice__rating d-flex align-items-center justify-content-between">
+                            <div className="tpservice__rating-icon">
                               <span>{item.start_text}</span>
                               <i className="fi fi-ss-star"></i>
                               <i className="fi fi-ss-star"></i>
@@ -636,9 +636,9 @@ const OurCourse = () => {
                               <i className="fi fi-rs-star"></i>
                               <p>(125)</p>
                             </div>
-                            <div className="tpcourse__pricing">
+                            <div className="tpservice__pricing">
                               <h5 className="price-title">
-                                ${item.course_price}
+                                ${item.service_price}
                               </h5>
                             </div>
                           </div>
@@ -650,12 +650,12 @@ const OurCourse = () => {
               </div>
             </div>
           </div>
-          {/* <!-- course-nav-tab-end --> */}
+          {/* <!-- service-nav-tab-end --> */}
           <div className="row text-center">
             <div className="col-lg-12">
-              <div className="course-btn mt-20">
-                <Link className="tp-btn" href="/course-list">
-                  Browse All Courses
+              <div className="service-btn mt-20">
+                <Link className="tp-btn" href="/service-list">
+                  Browse All services
                 </Link>
               </div>
             </div>
@@ -666,4 +666,4 @@ const OurCourse = () => {
   );
 };
 
-export default OurCourse;
+export default Ourservice;
