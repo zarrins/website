@@ -4,7 +4,7 @@ import React from "react";
 const choose_data = {
   bg_img: "/assets/img/bg/choose-img-01.jpg",
   experiences_years: "10",
-  title: "چرا ما؟؟؟",
+  title: "",
   sub_title: (
     <>
       چرا باید به تیم

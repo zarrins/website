@@ -1,15 +1,12 @@
 const answer_question_data = [
   {
     id: 1,
-    question: "Do I receive anything after I complete a service?",
+    question: "چگونه سفارش تعمیرات کولر گازی را ثبت کنم؟",
     answer: (
       <>
-        Proactively initiate corporate vortals via bricks-and-clicks
-        relationships. Dynamically envisioneer cutting-edge paradigms via
-        client-centered relationships. Globally repurpose backward-compatible
-        growth strategies and fully tested e-services. Energistically promote
-        stand-alone models whereas effective solutions. Quickly target low-risk
-        high-yield e-markets via web-enabled networks.
+        برای ثبت سفارش تعمیر ماشین ظرفشویی با شماره 45396-021 تماس بگیرید
+        یا فرم درخواست اعزام کارشناس را تکمیل کنید. پس از ثبت اطلاعات،
+        کارشناس مربوطه در کمتر از 60 دقیقه با شما تماس خواهد گرفت.
       </>
     ),
     accordion_id: "headingOne",

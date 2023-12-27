@@ -10,14 +10,14 @@ const FaqArea = () => {
         data-wow-delay=".2s"
       >
         <div className="container">
-          <div className="row text-center">
+          {/* <div className="row text-center">
             <div className="col-lg-12">
               <div className="section-title mb-60">
                 <span className="tp-sub-title-box mb-15">FAQ</span>
                 <h2 className="tp-section-title">Many People Ask About This</h2>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="row">
             <div className="col-md-12">
               <div className="accordion pb-20" id="accordionExample">
@@ -53,11 +53,11 @@ const FaqArea = () => {
               </div>
             </div>
           </div>
-          <div className="faq-btn text-center">
+          {/* <div className="faq-btn text-center">
             <a href="#" className="tp-btn">
               Add Your Questions
             </a>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

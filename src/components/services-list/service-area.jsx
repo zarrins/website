@@ -2,6 +2,7 @@ import service_data from "@/src/data/service-data";
 import Link from "next/link";
 import React from "react";
 import our_service_data from "@/src/data/our-service-data";
+import ToggleableTabs from "../service-details/datail-tabs";
 
 const ServiceArea = () => {
   return (
@@ -85,6 +86,7 @@ const ServiceArea = () => {
               </div>
             ))} */}
              {our_service_data.map((item) => (
+              <>
               <div key={item.id} className="col-xl-4 col-lg-6 col-md-6">
                 <div
                   className="tpservice mb-40 wow fadeInUp"
@@ -165,6 +167,8 @@ const ServiceArea = () => {
                   </div>
                 </div>
               </div>
+              </>
+              
             ))}
           </div>
           {/* <div className="row text-center">

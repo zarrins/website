@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import BackToTop from "../lib/BackToTop";
 import FooterThree from "./footers/footer-3";
 import HeaderTwo from "./headers/header-2";
+import Footer from "./footers/footer";
 
 const WrapperFour = ({ children }) => {
   useEffect(() => {
@@ -15,7 +16,7 @@ const WrapperFour = ({ children }) => {
     <>
       <HeaderTwo />
       {children}
-      <FooterThree />
+      <Footer />
       <BackToTop />
     </>
   );

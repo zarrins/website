@@ -3,6 +3,7 @@ import SEO from "../../common/seo";
 import Breadcrumb from "../../components/bredcrumb/breadcrumb";
 import review_content from '@/src/data/review-data';
 import WrapperFour from "../../layout/wrapper-4";
+import ToggleableTabs from "@/src/components/service-details/datail-tabs";
 
 const index = () => {
   return (
@@ -13,7 +14,7 @@ const index = () => {
       {/* <ServiceDetails /> */}
       <section className="c-details-area pt-120 pb-50 wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".2s">
          <div className="container">
-            <div className="row c-details-sidebar">
+            <div className="row c-details-sidebar" style={{paddingBottom: "50px"}}>
                <div className="col-lg-6 col-md-12">
                   <div className="c-details-wrapper mr-25">
                     
@@ -22,7 +23,7 @@ const index = () => {
                         <div className="tpservice__ava-title mb-25">
                            <h4 className="c-details-title"><a href="#">تعمیرات کولر گازی</a></h4>
                         </div>
-                        <div className="tpservice__meta service-details-list">
+                        {/* <div className="tpservice__meta service-details-list">
                            <ul className="d-flex align-items-center">
                               <li>
                                  <div className="rating-gold d-flex align-items-center">
@@ -36,16 +37,17 @@ const index = () => {
                                  </div>
                               </li>
                               <li><img src="/assets/img/icon/c-meta-01.png" alt="meta-icon" /> <span>35 Classes</span></li>
-                              <li><img src="/assets/img/icon/c-meta-02.png" alt="meta-icon" /> <span>291 Students</span></li>
                            </ul>
-                        </div>
+                        </div> */}
                      </div>
+
                      <div className="c-details-about mb-40">
-                        <h5 className="tp-c-details-title mb-20">About This service</h5>
+                        {/* <h5 className="tp-c-details-title mb-20">About This service</h5> */}
                         <p>Synergistically foster 24/7 leadership rather than scalable platforms. Conveniently visualize installed base products before interactive results. Collaboratively restore corporate experiences and open-source applications. Proactively mesh cooperative growth strategies for covalent opportunities. Competently create efficient markets through best-of-breed potentialities.</p>
                         <p>Proactively initiate corporate vortals via bricks-and-clicks relationships. Dynamically envisioneer cutting-edge paradigms via client-centered relationships. Globally repurpose backward-compatible growth strategies and fully tested e-services. Energistically promote stand-alone models whereas effective solutions. Quickly target low-risk high-yield e-markets via web-enabled networks.</p>
                      </div>
-                     <div className="cor-details-instructor mb-40">
+
+                     {/* <div className="cor-details-instructor mb-40">
                         <h4 className="tp-c-details-title mb-40">Instructor</h4>
                         <div className="service-instructor-details d-flex f-wrap align-items-center">
                            <div className="service-avata mr-30 mb-20">
@@ -110,13 +112,13 @@ const index = () => {
                               }
 
                         </div>
-                     </div>
+                     </div> */}
                   </div>
                </div>
                <div className="col-lg-6 col-md-12">
                   <div className="c-details-sidebar">
                   <div className="c-details-thumb p-relative">
-                        <img src="/assets/img/service/c-details-bg-01.jpg" alt="details-bg" />
+                        <img src="/assets/img/service/c-details-bg-03.jpg" alt="details-bg" />
                         {/* <div className="c-details-ava d-md-flex align-items-center">
                            <img src="/assets/img/service/c-details-ava-01.png" alt="avata" />
                            <span>By <a href="#">Emilia Jonas</a></span>
@@ -127,9 +129,12 @@ const index = () => {
                </div>
 
             </div>
+            <div className="row">
+            <ToggleableTabs/>
+</div>
            
             </div>
-         
+
       </section>
       
     </WrapperFour>

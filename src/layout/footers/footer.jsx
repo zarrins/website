@@ -19,10 +19,10 @@ const footer_data = [
     cls: "col-xl-3",
     footer_col: "footer-col-2",
     links: [
-      { name: "تعمیر یخچال", link: "/policy" },
-      { name: "تعمیر پکیج", link: "/documentation" },
-      { name: "تعمیر لباسشویی", link: "/chat-online" },
-      { name: "تعمیر کولر گازی", link: "/order-cancel" },
+      { name: "تعمیر یخچال", link: "/service-details/refrigrator" },
+      { name: "تعمیر پکیج", link: "/service-details/heater" },
+      { name: "تعمیر لباسشویی", link: "/service-details/washing-machine" },
+      { name: "تعمیر کولر گازی", link: "/service-details/cooler" },
     ],
   },
   {
@@ -71,7 +71,8 @@ const social_links = [
 const copyright = {
   logo: "/assets/img/logo/logo.png",
   copyright_text: (
-    <>Copyright © Uxaction {new Date().getFullYear()}, All Rights Reserved</>
+    // <>Copyright © Uxaction {new Date().getFullYear()}, All Rights Reserved</>
+    <>تمام حقوق مادی و معنوی این وب سایت متعلق به تیم تماس با سرویس می باشد.</>
   ),
 };
 
@@ -84,7 +85,7 @@ const Footer = () => {
           className="footer-bg theme-bg bg-bottom"
           style={{ backgroundImage: `url(/assets/img/bg/shape-bg-02.png)` }}
         >
-          <div className="f-border pt-115 pb-70">
+          <div className="f-border pt-115">
             <div className="container">
               <div className="row">
                 {footer_data.map((item) => (
@@ -97,7 +98,7 @@ const Footer = () => {
                         <ul>
                           {item.links.map((link, i) => (
                             <li key={i}>
-                              <a href={item.links}>{link.name}</a>
+                              <a href={link.link}>{link.name}</a>
                             </li>
                           ))}
                         </ul>

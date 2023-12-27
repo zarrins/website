@@ -81,13 +81,13 @@ const {sticky} = useSticky()
                   </div>
                </div>
                <div className="col-xxl-3 col-xl-3 col-lg-6 d-flex align-items-center justify-content-end">
-                  <div className="header-meta-green">
+                  {/* <div className="header-meta-green">
                      <ul>
                         <li><Link href="/sign-in"><i className="fi fi-rr-user"></i></Link></li>
                         <li><Link href="/cart"><i className="fi fi-rr-shopping-bag"></i></Link></li>
                         <li><a href="#" className="tp-menu-toggle d-xl-none"><i className="icon_ul"></i></a></li>
                      </ul>
-                  </div>
+                  </div> */}
                </div>
             </div>
          </div>

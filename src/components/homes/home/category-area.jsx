@@ -5,14 +5,14 @@ import React from "react";
 const category_data = [
   {
     id: 1,
-    icon: "/assets/img/washing-machine.png",
+    icon: "/assets/img/icon/washing-machine.png",
     title: "تعمیر لباسشویی",
     link: "/service-grid",
 
   },
   {
     id: 2,
-    icon: "/assets/img/washing-machine.png",
+    icon: "/assets/img/icon/smart-fridge.png",
     title: "تعمیر یخچال",
     // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
     link: "/service-grid",
@@ -20,7 +20,7 @@ const category_data = [
 
   {
     id: 3,
-    icon: "/assets/img/washing-machine.png",
+    icon: "/assets/img/icon/dish-washer.png",
     title: "تعمیر ظرفشویی",
     // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
     link: "/service-grid",
@@ -28,7 +28,7 @@ const category_data = [
   },
   {
     id: 4,
-    icon: "/assets/img/washing-machine.png",
+    icon: "/assets/img/icon/vacuum-cleaner.png",
     title: "تعمیر جاروبرقی",
     // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
     link: "/service-grid",
@@ -36,7 +36,7 @@ const category_data = [
   },
   {
     id: 5,
-    icon: "/assets/img/washing-machine.png",
+    icon: "/assets/img/icon/oven.png",
     title: "تعمیر ماکروفر",
     // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
     link: "/service-grid",
@@ -44,7 +44,7 @@ const category_data = [
   },
   {
     id: 6,
-    icon: "/assets/img/washing-machine.png",
+    icon: "/assets/img/icon/cooler.png",
     title: "تعمیر کولرگازی",
     // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
     link: "/service-grid",
@@ -52,7 +52,7 @@ const category_data = [
   },
   {
     id: 7,
-    icon: "/assets/img/washing-machine.png",
+    icon: "/assets/img/icon/water-heater.png",
     title: "تعمیر پکیج",
     // des: "Interactively provide access world class materials for unique catalysts for change my ocardinat.",
     link: "/service-grid",
